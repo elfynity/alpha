@@ -1,0 +1,31 @@
+@media screen {
+  /* page title and main write up*/
+  .main-write-up{
+    text-align:center;
+  }
+
+  .main-write-up :is(h1, h2){
+    margin:0;
+  }
+
+  .main-write-up .description{
+    margin-top:20px;
+  }
+
+  /* banner */
+  /* content */
+  /* flexible-row*/
+
+  .flexible-rows{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+  }
+
+
+  /* */
+
+
+}

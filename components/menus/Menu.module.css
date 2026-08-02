@@ -1,0 +1,62 @@
+nav#primaryMenu {
+  
+}
+
+nav#primaryMenu ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+nav#primaryMenu a{
+  color:var(--light);
+  display: block;
+  padding:0 10px;
+
+}
+
+nav#primaryMenu > ul:first-of-type {
+  display:flex;
+  gap:10px;
+}
+
+nav#primaryMenu > ul:first-of-type > li{
+  position:relative;
+}
+
+nav#primaryMenu ul li{
+  line-height:70px;
+}
+
+nav#primaryMenu :is(ul ul li, ul ul ul ul li) {
+  line-height:40px;
+}
+
+
+
+nav#primaryMenu ul.subMenu{
+  display:none;
+  background-color:var(--primary);
+  position:absolute;
+  top:70px;
+  left:0;
+  width:200px;
+}
+
+nav#primaryMenu ul.subMenu ul{
+  top:40px;
+}
+
+nav#primaryMenu ul li:hover > .subMenu{
+  display:block;
+}
+
+nav#primaryMenu ul.subMenu a{
+  white-space: nowrap;
+}
+
+nav#primaryMenu ul.subMenu ul {
+  position:absolute;
+  left:200px;
+
+}

@@ -1,0 +1,284 @@
+@media screen {
+    
+  :root {
+    /* site colours */
+    --base-ext: #141414;
+    --base:#303030;
+    --base-alt:#404040;
+    --primary:#1A706F;
+    --accent:#4AFFED;
+    --dark:#000;
+    --light:#eee;
+
+    --font-r:clamp(14px, 4vw, 18px);
+    --font-r-lh:clamp(20px, 4vw, 24px);
+
+    --font-m:clamp(16px, 4vw, 20px);
+    --font-m-lh:clamp(22px, 4vw, 26px);
+
+    --font-ml:clamp(20px, 4vw, 24px);
+    --font-ml-lh:clamp(26px, 4vw, 30px);
+
+    --font-l:clamp(24px, 4vw, 28px);
+    --font-l-lh:clamp(30px, 4vw, 34px);
+
+    --font-xl:clamp(28px, 4vw, 32px);
+    --font-xl-lh:clamp(34px, 4vw, 38px);
+
+    --font-xxl:clamp(32px, 4vw, 36px);
+    --font-xxl-lh:clamp(38px, 4vw, 42px);
+
+
+    --padding-s:10px;
+    --padding-m:30px;
+    --padding-l:50px;
+
+
+  }
+
+  .bg-color-base-ext{
+    background-color: var(--base-ext);
+  }
+
+  .bg-color-base{
+    background-color: var(--base);
+  }
+
+  .bg-color-base-alt{
+    background-color: var(--base-alt);
+  }
+
+  .bg-color-primary{
+    background-color: var(--primary);
+  }
+
+  .bg-color-accent{
+    background-color: var(--accent);
+  }
+
+  .bg-color-dark{
+    background-color: var(--dark);
+  }
+
+  .bg-color-light{
+    background-color: var(--light);
+  }
+
+
+    
+
+
+  .content-padding-s{
+    padding:var(--padding-s) 0; 
+  }
+
+  .content-padding-m{
+    padding:var(--padding-m) 0; 
+  }
+
+  .content-padding-l{
+    padding:var(--padding-l) 0; 
+  }
+
+
+
+
+  html {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+
+
+
+  body {
+    margin:0;
+    padding:0;
+    font-family: var(--font-inter);
+    background-color:var(--base);
+    color:var(--light);
+    font-size:var(--font-r);
+    line-height:var(--font-r-lh);
+  }
+
+
+  .noshow{
+    line-height:0;
+    height:0;
+    color:white;
+    padding:0;
+    margin:0;
+    position:relative;
+    z-index:-101;
+  }
+
+  .noshow h2, 
+  .noshow h3,
+  .noshow h4,
+  .noshow h5,
+  .noshow h6,
+  .noshow p, 
+  .noshow img, 
+  .noshow a, 
+  .noshow span{
+    line-height:0;
+    color:white;
+    font-size:1px;
+    padding:0;
+    margin:0;	
+    height:0;
+  } 
+
+  
+  h1, h2, h3, h4, h5, h6{
+    margin:0;
+    font-weight:600;
+  }
+
+
+  h1{
+    font-size: var(--font-xxl);
+    line-height: var(--font-xxl-lh);
+  }
+
+  h2{
+    font-size: var(--font-xl);
+    line-height: var(--font-xl-lh);
+  }
+
+  h2.small{
+    font-size: var(--font-r);
+    line-height: var(--font-r-lh);
+    text-transform:uppercase;
+  }
+
+
+  a {
+    text-decoration:none;
+  }
+
+  a.buttonLink{
+    color:var(--light);
+    padding:10px 25px;
+    border-radius:5px;
+    font-weight:400;
+    font-size: var(--font-m);
+    line-height: var(--font-m-lh);
+  }
+
+  a.buttonLink.dark{
+    background-color:var(--dark);
+    color:var(--light);
+  }
+
+  a.buttonLink.light{
+    background-color:var(--light);
+    color:var(--dark);
+  }
+
+  a.buttonLink.accent{
+    background-color:var(--accent);
+    color:var(--light);
+  }
+
+  a.buttonLink:hover{
+    opacity:0.8;
+  }
+
+  .site{
+    min-height:95vh;
+  }
+
+  .full-width{
+    width:100%;
+  }
+
+
+  .full-wrapper{
+    width:94%;
+    margin:0 3%;
+  }
+
+  
+  .wrapper{
+    width:1200px;
+    margin:0 auto;
+  }
+
+  .small-wrapper{
+    width:700px;
+    margin:0 auto;
+  }
+
+  .no-pad{
+    padding:0;
+  }
+
+  .pad{
+    padding:30px 0;
+  }
+
+  header{
+
+  }
+
+    header .headerWrapper{
+      display:grid;
+      grid-template-columns: min-content auto;
+      align-items:center;
+      gap:30px;
+    }
+
+    header img#logo {
+      max-width:200px;
+      margin:10px 0;
+    }
+
+
+
+
+  .banner{
+    background-size:cover;
+    min-height:500px;
+    background-position: center center;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+    color: white;
+  }
+
+  .banner .wrapper.left{
+    display:flex;
+    justify-content:flex-start;
+    text-align:left;
+  }
+
+  .banner .wrapper.center{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+  }
+
+  .banner .wrapper.right{
+    display:flex;
+    justify-content:flex-end;
+    text-align:right;
+  }
+
+
+
+  .banner .text{
+    max-width:500px;
+  }
+
+  .banner p{
+    font-size:var(--font-ml);
+    line-height: var(--font-ml-lh);
+  }
+
+
+
+
+
+}
