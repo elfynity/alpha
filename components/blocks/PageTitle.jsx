@@ -7,6 +7,7 @@ return(
       customClass="main-write-up"
       wrap={block.wrapper}
       bgColorACF={block.color}
+      pad={block.padding_top_bottom}
     >
     <h1>{block.title}</h1>
 

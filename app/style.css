@@ -1,10 +1,13 @@
 @media screen {
     
   :root {
+
+    --gap:30px;
+
     /* site colours */
     --base-ext: #141414;
     --base:#303030;
-    --base-alt:#404040;
+    --base-alt:#393939;
     --primary:#1A706F;
     --accent:#4AFFED;
     --dark:#000;
@@ -29,9 +32,10 @@
     --font-xxl-lh:clamp(38px, 4vw, 42px);
 
 
-    --padding-s:10px;
-    --padding-m:30px;
-    --padding-l:50px;
+    --padding-xs:10px;
+    --padding-s:20px;
+    --padding-m:40px;
+    --padding-l:80px;
 
 
   }
@@ -68,6 +72,10 @@
     
 
 
+  .content-padding-xs{
+    padding:var(--padding-xs) 0; 
+  }
+
   .content-padding-s{
     padding:var(--padding-s) 0; 
   }
@@ -79,6 +87,20 @@
   .content-padding-l{
     padding:var(--padding-l) 0; 
   }
+
+  .padding-s{
+    padding:var(--padding-s); 
+  }
+
+  .padding-m{
+    padding:var(--padding-m); 
+  }
+
+  .padding-l{
+    padding:var(--padding-l); 
+  }
+
+
 
 
 
@@ -151,13 +173,20 @@
     text-transform:uppercase;
   }
 
+  img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
 
   a {
     text-decoration:none;
   }
 
   a.buttonLink{
-    color:var(--light);
+    background-color:var(--accent);
+    color:var(--dark);
     padding:10px 25px;
     border-radius:5px;
     font-weight:400;
@@ -166,7 +195,7 @@
   }
 
   a.buttonLink.dark{
-    background-color:var(--dark);
+    background-color:var(--base);
     color:var(--light);
   }
 
@@ -177,7 +206,7 @@
 
   a.buttonLink.accent{
     background-color:var(--accent);
-    color:var(--light);
+    color:var(--dark);
   }
 
   a.buttonLink:hover{
@@ -188,9 +217,6 @@
     min-height:95vh;
   }
 
-  .full-width{
-    width:100%;
-  }
 
 
   .full-wrapper{
@@ -217,6 +243,18 @@
     padding:30px 0;
   }
 
+  .left{
+    text-align:left;
+  }
+
+  .center{
+    text-align:center;
+  }
+
+  .left{
+    text-align:right;
+  }
+
   header{
 
   }
@@ -235,47 +273,6 @@
 
 
 
-
-  .banner{
-    background-size:cover;
-    min-height:500px;
-    background-position: center center;
-
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-
-    color: white;
-  }
-
-  .banner .wrapper.left{
-    display:flex;
-    justify-content:flex-start;
-    text-align:left;
-  }
-
-  .banner .wrapper.center{
-    display:flex;
-    justify-content:center;
-    text-align:center;
-  }
-
-  .banner .wrapper.right{
-    display:flex;
-    justify-content:flex-end;
-    text-align:right;
-  }
-
-
-
-  .banner .text{
-    max-width:500px;
-  }
-
-  .banner p{
-    font-size:var(--font-ml);
-    line-height: var(--font-ml-lh);
-  }
 
 
 

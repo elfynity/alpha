@@ -5,15 +5,16 @@ export const Container = ({
     id=undefined, 
     bgColorClass="", 
     bgColorACF="",
-    pad="content-padding-m", 
-    wrap="wrapper", 
-    customClass=""
+    pad="", 
+    wrap="", 
+    customClass="",
+    alignment=""
   }) => {
 return (
 <>
   <section
     id={id || undefined}
-    className={`${pad} ${bgColorClass}`}
+    className={`${pad} ${bgColorClass} ${alignment}`}
     style={{backgroundColor:bgColorACF}}
   >
     <div className={`${wrap} ${customClass}`}>

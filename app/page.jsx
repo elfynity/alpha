@@ -15,7 +15,7 @@ const getHomePage = async () => {
 	);
 
   // to see the json link above
-  //console.log(pageHomeContent.url);
+  console.log(pageHomeContent.url);
 
 	return pageHomeContent.json();
 };

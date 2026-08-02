@@ -1,6 +1,6 @@
 import { PageTitle } from '@/components/blocks/PageTitle';
 import { Banner } from '@/components/blocks/Banner';
-import { Content } from '@/components/blocks/Content';
+import { ContentImage } from '@/components/blocks/ContentImage';
 import { FlexibleRow } from '@/components/blocks/FlexibleRow';
 
 
@@ -18,8 +18,8 @@ export const BlockRenderer = ({ layouts }) => {
 			case 'banner':
 				return <Banner key={index} block={block} />;
 			
-      case 'content':
-				return <Content key={index} block={block} />;
+      case 'content_image':
+				return <ContentImage key={index} block={block} />;
 
       case 'flexible_row':
 				return <FlexibleRow key={index} block={block} />;  

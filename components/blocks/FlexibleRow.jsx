@@ -8,7 +8,7 @@ export const FlexibleRow = ({ block }) => {
       customClass="flexible-rows"
       wrap={block.wrapper}
       bgColorACF={block.color}
-      pad="content-padding-s"
+      pad={block.padding_top_bottom}
     >
 			{block.flexible_blocks.map((nestedBlock, index) => {
 				switch (nestedBlock.acf_fc_layout) {

@@ -14,7 +14,7 @@ const siteInfo = await getSiteInfo();
       <header>
         <Container 
           wrap="wrapper headerWrapper" pad="no-pad"
-          bgColorClass="bg-color-primary">
+          bgColorClass="bg-color-base-ext">
           <Link href="/">
             <img 
               id="logo" 

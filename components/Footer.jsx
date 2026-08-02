@@ -7,14 +7,24 @@ export const Footer = () => {
   return(
     <>
 
-    <footer>
-      <ILMenu />
-    </footer>
+    <Container
+      bgColorClass="bg-color-base-ext"
+      pad="content-padding-m"
+      wrap="wrapper"
+    >
+      <footer>
+        <ILMenu />
+      </footer>
+    </Container>
 
     <Container 
       id="copyright"
-      pad="content-padding-s"
-      bgColorClass="bg-color-primary"
+      bgColorClass="bg-color-base-ext"
+      pad="content-padding-xs"
+      wrap="wrapper"
+      alignment="center"
+      
+      
     >
 
   
